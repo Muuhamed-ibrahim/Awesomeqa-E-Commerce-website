@@ -42,7 +42,7 @@ To set up the Awesomeqa application locally, follow these steps:
 ## Usage
 * User Guide: Refer to the User Guide for detailed information on how to use the Awesomeqa website.
 ### Local testing execution example
-![Local testing execution example](execution.mp4)
+![Local testing execution example](execution.gif)
 
 ## Contributing
 * We welcome contributions from the community. To contribute to AwesomeQa, follow these steps:
