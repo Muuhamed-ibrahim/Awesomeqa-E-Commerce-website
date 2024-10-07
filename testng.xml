@@ -1,0 +1,235 @@
+<suite name="Demo">
+
+    <test name="Register User With Valid Data">
+        <classes>
+            <class name="testcases.TC01_Home">
+                <methods>
+                    <include name="ValidateRegisterPage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC02_Register">
+                <methods>
+                    <include name="registerNewUserWithValidData"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_MyAccount">
+                <methods>
+                    <include name="logoutBtn"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Login With Valid Data">
+        <classes>
+            <class name="testcases.TC01_Home">
+                <methods>
+                    <include name="ValidateLoginPage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC04_Login">
+                <methods>
+                    <include name="validateLoginWithValidData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Change Currency">
+        <classes>
+            <class name="testcases.TC01_Home">
+                <methods>
+                    <include name="ValidateChangeCurrency"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Reset New Password">
+        <classes>
+            <class name="testcases.TC01_Home">
+                <methods>
+                    <include name="ValidateLoginPage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC04_Login">
+                <methods>
+                    <include name="validateLoginWithValidData"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_MyAccount">
+                <methods>
+                    <include name="validateForgetPasswordPage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC05_ChangePassword">
+                <methods>
+                    <include name="resetNewPassword"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Login With New Reset Password">
+        <classes>
+            <class name="testcases.TC01_Home">
+                <methods>
+                    <include name="ValidateLoginPage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC04_Login">
+                <methods>
+                    <include name="validateLoginWithNewPassword"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Search on Item Randomly">
+        <classes>
+            <class name="testcases.TC01_Home">
+                <methods>
+                    <include name="ValidateLoginPage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC04_Login">
+                <methods>
+                    <include name="validateLoginWithNewPassword"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_MyAccount">
+                <methods>
+                    <include name="searchOnItemRandomly"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test name="Hover Randomly On Categories">
+        <classes>
+            <class name="testcases.TC01_Home">
+                <methods>
+                    <include name="ValidateLoginPage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC04_Login">
+                <methods>
+                    <include name="validateLoginWithNewPassword"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_MyAccount">
+                <methods>
+                    <include name="HoverOnCategories"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Hover On The First 3 Categories Then Select item Randomly">
+        <classes>
+            <class name="testcases.TC01_Home">
+                <methods>
+                    <include name="ValidateLoginPage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC04_Login">
+                <methods>
+                    <include name="validateLoginWithNewPassword"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_MyAccount">
+                <methods>
+                    <include name="selectItemFromSubCategories"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Add item to wishlist and CompareList and ShoppingCart">
+        <classes>
+            <class name="testcases.TC01_Home">
+                <methods>
+                    <include name="ValidateLoginPage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC04_Login">
+                <methods>
+                    <include name="validateLoginWithNewPassword"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_MyAccount">
+                <methods>
+                    <include name="openHomePage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_MyAccount">
+                <methods>
+                    <include name="addToWishList"/>
+                    <include name="addToCompareList"/>
+                    <include name="addToShoppingCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Create successful Order">
+        <classes>
+            <class name="testcases.TC01_Home">
+                <methods>
+                    <include name="ValidateLoginPage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC04_Login">
+                <methods>
+                    <include name="validateLoginWithNewPassword"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_MyAccount">
+                <methods>
+                    <include name="openHomePage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC03_MyAccount">
+                <methods>
+                    <include name="addToShoppingCart"/>
+                    <include name="openShoppingCartPage"/>
+                </methods>
+            </class>
+            <class name="testcases.TC06_Checkout">
+                <methods>
+                    <include name="clickOnCheckoutBtn"/>
+                    <include name="validateBillingDetails"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
+        <!--    <test name="Registration with Valid data" preserve-order="false">-->
+        <!--        &lt;!&ndash; Step:1 open registration from home page&ndash;&gt;-->
+        <!--        <classes>-->
+        <!--            <class name="testcases.HomePage">-->
+        <!--                <methods>-->
+        <!--                    <include name="ValidateRegistrationOpenSuccessfully"/>-->
+        <!--                </methods>-->
+        <!--            </class>-->
+
+        <!--            &lt;!&ndash; Step2: Register new user with valid data &ndash;&gt;-->
+        <!--            <class name="testcases.Registration">-->
+        <!--                <methods>-->
+        <!--                    <include name="checkRegistrationWithValidCredientials"/>-->
+        <!--                </methods>-->
+        <!--            </class>-->
+
+        <!--            <class name="testcases.HomePage">-->
+        <!--                <methods>-->
+        <!--                    <include name="validateChangeCurrency"/>-->
+        <!--                </methods>-->
+        <!--            </class>-->
+        <!--        </classes>-->
+        <!--    </test>-->
